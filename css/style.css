@@ -17,6 +17,11 @@ body {
 
 .clearfix {
 	display: inline-block;
+	width: 100%;
+}
+
+.right {
+	float: right;
 }
 
 header {
@@ -42,7 +47,6 @@ header p {
 }
 
 header p.right {
-	float: right;
 	border-bottom: 1px dashed #ffffff;
 	padding-bottom: 4px;
 }
@@ -92,35 +96,135 @@ nav .stretch {
 	line-height: 0;
 }
 
-#container {
-	display: block;
-	width: 940px;
-	margin: 30px auto 0 auto;
-}
-
 section {
+	display: block;
+	margin: 140px 0 0 0;
 	font-family: 'Ubuntu', sans-serif;
 	font-size: 16px;
 	font-weight: 400;
+}
+
+section h2 {
+	margin: 0;
+	margin-after: 0;
+	-webkit-margin-after: 0;
+	font-weight: 300;
+	font-size: 48px;
+}
+
+section h2 + img {
+	position: relative;
+	display: block;
+	margin: 0 auto;
+	top: -24px;
 }
 
 section strong {
 	font-weight: 500;
 }
 
-
-.intro h2 {
-	display: inline-block;
-	width: 330px;
-	font-weight: 300;
-	font-size: 48px;
+.container {
+	width: 940px;
+	margin: 0 auto;
 }
 
-.intro h2 span {
+#intro h2 {
+	display: inline-block;
+	width: 330px;
+	margin: 0;
+}
+
+#intro h2 span {
 	color: #00aaef;
 }
 
-.intro div.right {
-	float: right;
+#intro div.right {
 	width: 550px;
+}
+
+#intro ol {
+	width: 460px;
+	margin: 50px 0;
+}
+
+#intro div.right strong {
+	display: block;
+}
+
+#gallery {
+	background-color: #eeeeee;
+}
+
+#gallery h2, #consultation h2 {
+	text-align: center;
+	position: relative;
+	top: -28px;
+}
+
+#gallery p {
+	padding-bottom: 20px;
+	font-weight: 500;
+}
+
+#gallery p span {
+	font-weight: 400;
+	color: #00aaef;
+}
+
+#gallery .button {
+	margin-bottom: 110px;
+}
+
+
+div.button {
+	margin: 0 auto;
+	width: 190px;
+	background-color: #00aaef;
+}
+
+.button span {
+	display: block;
+	text-align: center;
+	font-size: 14px;
+	font-weight: 500;
+	padding: 20px 0 20px 0;
+	color: #ffffff;
+}
+
+#consultation {
+	margin: 0;
+}
+
+#consultation div div.text {
+	display: inline-block;
+	width: 450px;
+}
+
+section#consultation h3 {
+	display: block;
+	width: 400px;
+	font-size: 32px;
+	font-weight: 400;
+	margin-top: 105px;
+}
+
+#consultation form {
+	margin-top: 105px;
+}
+
+#consultation form input {
+	display: block;
+	width: 380px;
+	height: 52px;
+	margin-bottom: 14px;
+	text-align: center;
+	background-color: #eeeeee;
+	font-size: 14px;
+	font-weight: 500;
+}
+
+div#send {
+	display: block;
+	width: 380px;
+	margin-bottom: 140px;
 }
