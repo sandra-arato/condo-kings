@@ -78,7 +78,11 @@ nav a {
 	color: #ffffff;
 	vertical-align: top;
 	display: inline-block;
-	zoom: 1;
+	text-transform: uppercase;
+}
+
+nav a:hover {
+	color: #00aaef;
 }
 
 nav a:first-child {
@@ -110,13 +114,7 @@ section h2 {
 	-webkit-margin-after: 0;
 	font-weight: 300;
 	font-size: 48px;
-}
-
-section h2 + img {
-	position: relative;
-	display: block;
-	margin: 0 auto;
-	top: -24px;
+	text-transform: uppercase;
 }
 
 section strong {
@@ -159,6 +157,12 @@ section strong {
 	text-align: center;
 	position: relative;
 	top: -28px;
+	padding-bottom: 20px;
+}
+
+#gallery h2 {
+	background: url('../image/gallery_line.png') bottom no-repeat;
+	margin-bottom: 65px;
 }
 
 #gallery p {
@@ -195,6 +199,12 @@ div.button {
 	margin: 0;
 }
 
+#consultation h2 {
+	letter-spacing: -0.03em;
+	background: url('../image/consultation_line.png') bottom no-repeat;
+	margin-bottom: 105px;
+}
+
 #consultation div div.text {
 	display: inline-block;
 	width: 450px;
@@ -202,14 +212,10 @@ div.button {
 
 section#consultation h3 {
 	display: block;
+	margin-top: 0;
 	width: 400px;
 	font-size: 32px;
 	font-weight: 400;
-	margin-top: 105px;
-}
-
-#consultation form {
-	margin-top: 105px;
 }
 
 #consultation form input {
