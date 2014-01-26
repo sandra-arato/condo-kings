@@ -49,6 +49,7 @@ header p {
 header p.right {
 	border-bottom: 1px dashed #ffffff;
 	padding-bottom: 4px;
+	text-transform: uppercase;
 }
 
 .logo {
@@ -149,11 +150,11 @@ section strong {
 	display: block;
 }
 
-#gallery {
+#gallery, #testimonials {
 	background-color: #eeeeee;
 }
 
-#gallery h2, #consultation h2 {
+#gallery h2, #consultation h2, #testimonials h2, #contact h2 {
 	text-align: center;
 	position: relative;
 	top: -28px;
@@ -195,7 +196,7 @@ div.button {
 	color: #ffffff;
 }
 
-#consultation {
+#consultation, #testimonials, #contact {
 	margin: 0;
 }
 
@@ -218,7 +219,7 @@ section#consultation h3 {
 	font-weight: 400;
 }
 
-#consultation form input {
+form input, textarea {
 	display: block;
 	width: 380px;
 	height: 52px;
@@ -227,10 +228,82 @@ section#consultation h3 {
 	background-color: #eeeeee;
 	font-size: 14px;
 	font-weight: 500;
+	text-transform: uppercase;
 }
 
-div#send {
+form textarea {
+	height: 166px;
+}
+
+div#send, div#send-email {
 	display: block;
 	width: 380px;
 	margin-bottom: 140px;
+}
+
+#testimonials div.container {
+	padding-bottom: 120px;
+}
+
+#testimonials h2 {
+	background: url('../image/testimonials_line.png') bottom no-repeat;
+	margin-bottom: 45px;
+}
+
+#testimonials div div {
+	display: inline-block;
+	vertical-align: top;
+	width: 280px;
+	height: 480px;
+	font-size: 16px;
+	margin: 0;
+	padding: 0;
+}
+
+#testimonials span {
+	display: block;
+	margin: 0;
+	width: 120px;
+	font-size: 100px;
+	text-indent: 20px;
+	white-space: nowrap;
+	padding-bottom: 30px;
+	overflow: hidden;
+}
+
+#testimonials img, strong, em, blockquote {
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#testimonials strong {
+	font-weight: 700;
+}
+
+#testimonials em {
+	font-style: italic;
+	font-weight: 300;
+}
+
+#contact h2 {
+	background: url('../image/contact_line.png') bottom no-repeat;
+	margin-bottom: 65px;
+}
+
+footer {
+	position: absolute;
+	width: 100%;
+	height: 540px;
+	background: url('../image/footer.jpg') center no-repeat;
+	background-size: cover;
+}
+
+.center {
+	margin: auto;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
 }
