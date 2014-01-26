@@ -26,6 +26,7 @@ body {
 
 header {
 	display: block;
+	position: relative;
 	margin: 0 auto;
 	background-image: url('../image/slide1.jpg');
 	background-size: cover;
@@ -82,12 +83,7 @@ nav a {
 	text-transform: uppercase;
 }
 
-/*:target{
-	position: relative;
-	top: -100px;
-	/*visibility: hidden;*/
-}
-*/
+
 nav a:hover {
 	color: #00aaef;
 }
@@ -169,7 +165,7 @@ section strong {
 
 #gallery h2 {
 	background: url('../image/gallery_line.png') bottom no-repeat;
-	margin-bottom: 65px;
+	margin-bottom: 50px;
 }
 
 #gallery p {
