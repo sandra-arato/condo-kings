@@ -10,24 +10,24 @@
 		<script type="text/javascript" src="js/main.js"></script>
 	</head>
 	<body>
-		<header>
+		<header id="top">
 			<div>
 				<p>8 800 500 50 50</p>
 				<p class="right">Call to order</p>
 			</div>
 			<h1><span class="logo">Miami Condo Kings</span></h1>
 			<nav>
-				<a href="#">Home</a>
-				<a href="#">About</a>
-				<a href="#">Gallery</a>
-				<a href="#">Consultation</a>
-				<a href="#">Testimonials</a>
-				<a href="#" class="last">Contact</a>
+				<a href="#top">Home</a>
+				<a href="#intro">About</a>
+				<a href="#gallery">Gallery</a>
+				<a href="#consultation">Consultation</a>
+				<a href="#testimonials">Testimonials</a>
+				<a href="#contact" class="last">Contact</a>
 				<span class="stretch"></span>
 			</nav>
 		</header>
 		<section id="intro">
-			<div class="container">
+			<div class="content">
 				<h2>Miami <strong>best</strong> realty <span>&mdash; this</span></h2>
 				<div class="right">
 					<strong>Over 50 years experience in love.</strong>
@@ -46,7 +46,7 @@
 			</div>
 		</section>
 		<section id="gallery">
-			<div class="container">
+			<div class="content">
 				<h2>Gallery</h2>
 				<div>
 					<img src="image/property1.jpg" alt="Marina Palms Property">
@@ -68,7 +68,7 @@
 			</div>
 		</section>
 		<section id="consultation">
-			<div class="container">
+			<div class="content">
 				<h2>Consultation</h2>
 				<div class="text">
 					<h3>How long have you do yourself a gift?</h3>
@@ -80,16 +80,16 @@
 					<input type="text" name="contact-name" alt="name" placeholder="name">
 					<input type="text" name="phone" alt="phone" placeholder="phone">
 					<input type="text" name="email" alt="email" placeholder="email">
-					<div class="button" id="send"><span>CONSULTATION</span></div>
+					<div class="button" id="send"><span>Consultation</span></div>
 				</form>
 				<div class="clearfix"></div>
 			</div>
 		</section>
 		<section id="testimonials">
-			<div class="container">
+			<div class="content">
 				<h2>Testimonials</h2>
 				<div>
-					<span class="entypo quote">Our client</span>
+					<span class="quote">Our client</span>
 					<img src="image/client1.png" alt="Stev Joni">
 					<strong>Stev Joni</strong>
 					<em>Founder Lucoil</em>
@@ -98,7 +98,7 @@
 					</blockquote>
 				</div>
 				<div>
-					<span class="entypo quote">Our client</span>
+					<span class="quote">Our client</span>
 					<img src="image/client2.png" alt="Alisher Usmanov">
 					<strong>Alisher Usmanov</strong>
 					<em>Ural Steel</em>
@@ -107,7 +107,7 @@
 					</blockquote>
 				</div>
 				<div>
-					<span class="entypo quote">Our client</span>
+					<span class="quote">Our client</span>
 					<img src="image/client3.png" alt="Aleksei Mordashov">
 					<strong>Aleksei Mordashov</strong>
 					<em>Ural Steel</em>
@@ -115,19 +115,29 @@
 						When my lovely valley of steam rises and half-day sun is above an impermeable. thicket
 					</blockquote>
 				</div>
+				<span class="stretch"></span>
 			</div>
 		</section>
 		<section id="contact">
-			<div class="container">
+			<div class="content">
 				<h2>Contact</h2>
-				<div class="text">
-					<address>Something.</address>
-				</div>
+				<address>
+					<p>Hello@miami.com</p>
+					<p>
+						8 800 678 78 78</br>
+						8 800 700 98 98
+					</p>
+					<p>
+						400 first ave. n.</br>
+						suite 700</br>
+						Minneapolis, MN 55401</br>
+					</p>
+				</address>
 				<form class="right" action="dosomething" method="get">
 					<input type="text" name="contact-name" alt="name" placeholder="name">
 					<input type="text" name="email" alt="email" placeholder="email">
 					<textarea type="text" name="message" alt="message" placeholder="message"></textarea>
-					<div class="button" id="send-email"><span>CONSULTATION</span></div>
+					<div class="button" id="send-email"><span>Write to us</span></div>
 				</form>
 				<div class="clearfix"></div>
 			</div>

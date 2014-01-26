@@ -82,6 +82,12 @@ nav a {
 	text-transform: uppercase;
 }
 
+/*:target{
+	position: relative;
+	top: -100px;
+	/*visibility: hidden;*/
+}
+*/
 nav a:hover {
 	color: #00aaef;
 }
@@ -94,7 +100,7 @@ nav a.last {
 	padding-right: 10px;
 }
 
-nav .stretch {
+.stretch {
 	width: 100%;
 	display: inline-block;
 	font-size: 0;
@@ -103,15 +109,15 @@ nav .stretch {
 
 section {
 	display: block;
-	margin: 140px 0 0 0;
+	margin: 0;
 	font-family: 'Ubuntu', sans-serif;
 	font-size: 16px;
 	font-weight: 400;
 }
 
+
 section h2 {
-	margin: 0;
-	margin-after: 0;
+	margin: 140px 0 0 0;
 	-webkit-margin-after: 0;
 	font-weight: 300;
 	font-size: 48px;
@@ -122,7 +128,7 @@ section strong {
 	font-weight: 500;
 }
 
-.container {
+.content {
 	width: 940px;
 	margin: 0 auto;
 }
@@ -130,7 +136,6 @@ section strong {
 #intro h2 {
 	display: inline-block;
 	width: 330px;
-	margin: 0;
 }
 
 #intro h2 span {
@@ -138,6 +143,7 @@ section strong {
 }
 
 #intro div.right {
+	margin-top: 140px;
 	width: 550px;
 }
 
@@ -185,6 +191,7 @@ div.button {
 	margin: 0 auto;
 	width: 190px;
 	background-color: #00aaef;
+	text-transform: uppercase;
 }
 
 .button span {
@@ -196,13 +203,10 @@ div.button {
 	color: #ffffff;
 }
 
-#consultation, #testimonials, #contact {
-	margin: 0;
-}
-
 #consultation h2 {
 	letter-spacing: -0.03em;
 	background: url('../image/consultation_line.png') bottom no-repeat;
+	margin-top: 0;
 	margin-bottom: 105px;
 }
 
@@ -241,8 +245,11 @@ div#send, div#send-email {
 	margin-bottom: 140px;
 }
 
-#testimonials div.container {
+#testimonials div.content {
 	padding-bottom: 120px;
+	text-align: justify;
+	-ms-text-justify: distribute-all-lines;
+	text-justify: distribute-all-lines;
 }
 
 #testimonials h2 {
@@ -254,41 +261,54 @@ div#send, div#send-email {
 	display: inline-block;
 	vertical-align: top;
 	width: 280px;
-	height: 480px;
 	font-size: 16px;
 	margin: 0;
 	padding: 0;
 }
 
-#testimonials span {
+.quote {
 	display: block;
+	position: relative;
+	top: 80px;
+	left: 36px;
 	margin: 0;
-	width: 120px;
-	font-size: 100px;
-	text-indent: 20px;
+	width: 35px;
+	height: 30px;
+	background-image: url('../image/q.png');
+	text-indent: 100%;
 	white-space: nowrap;
-	padding-bottom: 30px;
 	overflow: hidden;
 }
 
-#testimonials img, strong, em, blockquote {
+#testimonials img, #testimonials strong, em, blockquote {
 	display: block;
 	margin: 0 auto;
 	text-align: center;
 }
 
 #testimonials strong {
+	margin-top: 14px;
 	font-weight: 700;
 }
 
 #testimonials em {
+	margin-top: 10px;
+	margin-bottom: 40px;
 	font-style: italic;
 	font-weight: 300;
 }
 
 #contact h2 {
 	background: url('../image/contact_line.png') bottom no-repeat;
+	margin-top: 0;
 	margin-bottom: 65px;
+}
+
+address {
+	display: inline-block;
+	font-weight: 400;
+	font-size: 24px;
+	font-style: normal;
 }
 
 footer {
