@@ -77,7 +77,7 @@ nav, div.nav {
 	display: block;
 	position: fixed;
 	width: 100%;
-	bottom: 0;
+	bottom: -6px;
 	
 }
 
@@ -118,7 +118,7 @@ nav a, .nav a {
 	vertical-align: top;
 	display: inline-block;
 	text-transform: uppercase;
-	padding: 28px 0 8px 0;
+	padding-top: 16px;
 }
 
 .nav a {
@@ -213,7 +213,8 @@ section strong {
 	font-weight: 500;
 }
 
-#gallery p span {
+#gallery p a {
+	text-decoration: none;
 	font-weight: 400;
 	color: #00aaef;
 }
