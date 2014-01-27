@@ -24,6 +24,8 @@ body {
 	float: right;
 }
 
+/* Header styling */
+
 header {
 	display: block;
 	position: relative;
@@ -48,10 +50,14 @@ header p {
 	display: inline-block;
 }
 
-header p.right {
+header div a.right {
+	margin-top: 16px;
 	border-bottom: 1px dashed #ffffff;
 	padding-bottom: 4px;
 	text-transform: uppercase;
+	text-decoration: none;
+	color: #ffffff;
+
 }
 
 .logo {
@@ -65,12 +71,7 @@ header p.right {
 	overflow: hidden;
 }
 
-.stretch {
-	width: 100%;
-	display: inline-block;
-	font-size: 0;
-	line-height: 0;
-}
+/* Navigation styling */
 
 nav, div.nav {
 	display: block;
@@ -83,12 +84,17 @@ nav, div.nav {
 nav div, div.nav div {
 	position: relative;
 	width: 940px;
-	/*height: 60px;*/
 	margin: 0 auto;
 	text-align: justify;
 	-ms-text-justify: distribute-all-lines;
 	text-justify: distribute-all-lines;
+}
 
+.stretch {
+	width: 100%;
+	display: inline-block;
+	font-size: 0;
+	line-height: 0;
 }
 
 nav a {
@@ -119,7 +125,6 @@ nav a, .nav a {
 	color: #ffffff;
 }
 
-
 nav a:hover, .nav a:hover {
 	color: #00aaef;
 }
@@ -132,7 +137,7 @@ nav a.last, div.nav a.last {
 	padding-right: 10px;
 }
 
-
+/* Styling content which is segmented to sections */
 
 section {
 	display: block;
@@ -160,6 +165,8 @@ section strong {
 	margin: 0 auto;
 }
 
+/* Styling of Intro section */
+
 #intro h2 {
 	display: inline-block;
 	width: 330px;
@@ -182,6 +189,8 @@ section strong {
 #intro div.right strong {
 	display: block;
 }
+
+/* Styling of Gallery section */
 
 #gallery, #testimonials {
 	background-color: #eeeeee;
@@ -209,26 +218,16 @@ section strong {
 	color: #00aaef;
 }
 
-#gallery .button {
-	margin-bottom: 110px;
-}
-
-
-div.button {
-	margin: 0 auto;
+#gallery button {
+	margin: 0 auto 110px auto;
 	width: 190px;
 	background-color: #00aaef;
 	text-transform: uppercase;
-}
-
-.button span {
-	display: block;
-	text-align: center;
-	font-size: 14px;
 	font-weight: 500;
-	padding: 20px 0 20px 0;
 	color: #ffffff;
 }
+
+/* Styling of Consultation section with form styling included */
 
 #consultation h2 {
 	letter-spacing: -0.03em;
@@ -250,27 +249,40 @@ section#consultation h3 {
 	font-weight: 400;
 }
 
-form input, textarea {
+form input, textarea, button {
 	display: block;
 	width: 380px;
 	height: 52px;
 	margin-bottom: 14px;
+	padding: 0;
+	border: none;
 	text-align: center;
 	background-color: #eeeeee;
 	font-size: 14px;
 	font-weight: 500;
 	text-transform: uppercase;
+	cursor: pointer;
 }
 
 form textarea {
+	padding-top: 14px;
 	height: 166px;
 }
 
-div#send, div#send-email {
+form button {
+	background-color: #00aaef;
+	color: #ffffff;
+	font-weight: 500;
+}
+
+
+#send, #send-email {
 	display: block;
 	width: 380px;
 	margin-bottom: 140px;
 }
+
+/* Styling of Testimonials section */
 
 #testimonials div.content {
 	padding-bottom: 120px;
@@ -325,6 +337,8 @@ div#send, div#send-email {
 	font-weight: 300;
 }
 
+/* Styling of Contact section, included form is already styled at Consultation section */
+
 #contact h2 {
 	background: url('../image/contact_line.png') bottom no-repeat;
 	margin-top: 0;
@@ -337,6 +351,8 @@ address {
 	font-size: 24px;
 	font-style: normal;
 }
+
+/* Styling of Footer */
 
 footer {
 	position: absolute;

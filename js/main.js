@@ -10,6 +10,7 @@ function menuFlipper() {
 	var scroll = $(window).scrollTop();
 	var headerPos = $(header).offset();
 	var headerBottom = headerPos.top + headerHeight - scroll;
+	var currentSection;
 
 	if (headerBottom <= menuB || headerBottom >= menuPos) {
 		var diff = menuB - headerBottom ;
@@ -26,7 +27,6 @@ function menuFlipper() {
 			$(menu).css("visibility", "visible");	
 		}
 	}
-	
 }
 
 
@@ -56,6 +56,8 @@ function initialize() {
 	menuHeight = $(menu).height();
 	menuPos = $(menu).position().top;
 	menuB = menuHeight + menuPos;
+
+	$("footer").css("padding-bottom", menuHeight + "px");
 	
 	smoothScroll();
 	$(window).scroll(menuFlipper);
