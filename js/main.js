@@ -1,63 +1,32 @@
+var header;
+var headerHeight;
+var menu;
+var menuHeight;
+var menuPos;
+var menuB;
 
-var stickyON;
+function menuFlipper() {
 
-function stickyMenu () {
-	$(window).scroll(function () {
+	var scroll = $(window).scrollTop();
+	var headerPos = $(header).offset();
+	var headerBottom = headerPos.top + headerHeight - scroll;
 
-		if (stickyON) {
-			console.log("BAAAMMMMM");
-			$("#top-link").click( function() {
-
-				console.log("top clicked");
-				// $("header").animate({
-				// 	height: "765px",
-				// 	bottom: "0",
-				// 	scrollTop: 0
-				// });
-				// $(window).scrollTop(0);
-				// $("header").css({
-				// 	"position": "relative",
-				// 	"margin-top": "0",
-				// 	"z-index": "10000",
-				// 	"background": "url('image/slide1.jpg') bottom no-repeat",
-				// })
-				// $("header div, header h1").css({
-				// 	visibility: "visible",
-				// 	height: "auto"
-				// });
-				// $("header nav").css("bottom", "-540px");
-				// stickyMenu();
-			})
-			// smoothScroll();
-			
+	if (headerBottom <= menuB || headerBottom >= menuPos) {
+		var diff = menuB - headerBottom ;
+		var rect = "rect(0px, " + $(window).width() + "px, " + (menuHeight - diff) + "px, 0px)";
+		$(menu).css("clip", rect);
+	}
+	else {
+		if (headerBottom < menuPos) {
+			$(menu).css("visibility", "hidden");
+			console.log(scroll, headerHeight, menuPos)
 		}
-
 		else {
-			console.log("now header height is", $("header").height());
-			stickyON = false;
-			if (!stickyON) {
-				$("header").animate({
-					height: "-=700px",
-					bottom: "-=10px"
-					// scrollTop: 0
-				});
-			}
-				$(window).scrollTop(0);
-				$("header").css({
-					"position": "fixed",
-					"z-index": "10000",
-					"background": "#eeeeee"
-				})
-				$("header div, header h1").css({
-					visibility: "hidden",
-					height: "0"
-				});
-				$("header nav").css("bottom", "20px");
-				stickyON = true;
-				console.log(stickyON)
-				return stickyON;
+			$(menu).css("clip", "rect(0px, "+ $(window).width() + "px, " + menuHeight + "px, 0px)");
+			$(menu).css("visibility", "visible");	
 		}
-	})
+	}
+	
 }
 
 
@@ -79,8 +48,18 @@ function smoothScroll () {
 }
 
 function initialize() {
+	header = $("header");
+	$(header).height($(window).height());
+
+	headerHeight = $(header).height();
+	menu = $("div.nav");
+	menuHeight = $(menu).height();
+	menuPos = $(menu).position().top;
+	menuB = menuHeight + menuPos;
+	
 	smoothScroll();
-	stickyMenu();
+	$(window).scroll(menuFlipper);
+	
 }
 
 $(document).ready(initialize);

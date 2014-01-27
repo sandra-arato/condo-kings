@@ -76,14 +76,14 @@ nav, div.nav {
 	display: block;
 	position: fixed;
 	width: 100%;
-	bottom: 10px;
+	bottom: 0;
 	
 }
 
 nav div, div.nav div {
 	position: relative;
 	width: 940px;
-	height: 48px;
+	/*height: 60px;*/
 	margin: 0 auto;
 	text-align: justify;
 	-ms-text-justify: distribute-all-lines;
@@ -112,7 +112,7 @@ nav a, .nav a {
 	vertical-align: top;
 	display: inline-block;
 	text-transform: uppercase;
-	padding: auto 0;
+	padding: 28px 0 8px 0;
 }
 
 .nav a {
